@@ -11,8 +11,7 @@ venv/
 .pytest_cache/
 .ruff_cache/
 
-# Generated output
-out/
+# Eval run reports (change every run)
 evals/out/
 
 # OS / editor
