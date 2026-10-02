@@ -1,0 +1,12 @@
+{
+  "status": "provisional",
+  "note": "Seeded by evals/seed_gold_fixture.py from deal_stage/deal_size_cad (same stage priority as plugin/mock.py); set status to \"human-labeled\" when replaced by real GTM judgment.",
+  "k": 5,
+  "gold_top_k": [
+    "Marriott International",
+    "Procter & Gamble Canada",
+    "dentsu Canada",
+    "Bell Canada",
+    "Loblaw Companies Limited"
+  ]
+}
