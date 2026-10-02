@@ -2,23 +2,6 @@
 
 Turns a sheet of accounts into a ranked, rep-ready PDF of media/advertising opportunity briefs. Each brief combines **real web signals** (cited) with **synthetic CRM context** (kept clearly separate).
 
-### GTM terms used in the briefs
-
-| Term | Meaning here | Where it shows up |
-|---|---|---|
-| **Account** | A target company (one row = one brief) | Input sheet, `Account` model |
-| **Signal / trigger event** | A real, public event that creates a reason to buy: product launch, campaign or agency review, expansion, leadership change, RFP, earnings commentary | `signal_summary`, found via `web_search` |
-| **Why now** | The timing argument that links a signal to a pitch today | `why_now` |
-| **Tier (A/B/C)** | Account priority. A = large/strategic with a strong active signal, B = solid mid-funnel or moderate signal, C = early, speculative or no signal found | `tier`, first ranking key |
-| **Urgency (High/Medium/Low)** | How soon the rep should act | `urgency`, second ranking key |
-| **Deal stage / pipeline** | Where the opportunity sits (Discovery, Proposal and so on) | CRM column, shapes `recommended_action` |
-| **Next best action** | The single concrete step the rep should take | `recommended_action` |
-| **Warm path** | A credible route in: a named exec, agency of record or recent agency change, past partnership or sponsorship, shared event or board link. Only reported if a source supports it | `warm_path` |
-| **AOR (agency of record)** | The agency that holds the brand's media business. Agency reviews and changes are prime signals | Searched for as a warm path |
-| **Rep notes / relationship context** | Internal CRM context, kept separate from public signals | Synthetic columns, never cited as a signal |
-| **Account-based selling (ABM)** | Researching each account individually rather than blasting a list | The whole design: one research loop per account |
-| **Confidence** | How strongly the sources support the brief; `Low` means no substantive signal found | `confidence` |
-
 ## 1. Approach and architecture
 
 ```
